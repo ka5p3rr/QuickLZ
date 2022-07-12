@@ -1,0 +1,4 @@
+# compiled files
+compress_file
+decompress_file
+quicklz.o
