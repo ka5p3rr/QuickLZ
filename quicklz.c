@@ -595,7 +595,7 @@ static size_t qlz_decompress_core(const unsigned char *source, unsigned char *de
 			ui32 hash;
 			cword_val = cword_val >> 1;
 			hash = (fetch >> 4) & 0xfff;
-			offset2 = (const unsigned char *)(size_t)state->hash[hash].offset;
+			offset2 = state->hash[hash].offset;
 
 			if((fetch & 0xf) != 0)
 			{
